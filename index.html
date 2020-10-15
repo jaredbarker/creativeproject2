@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Currency Conversion</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="header">Currency converter</h1>
+    <p>This converter uses the exchange rate api, and we would like to thank them for their contributions.  To find a conversion, enter the Iso 145 three letter
+    code for the currency.  If you don't know this, follow this <a href="https://www.exchangerate-api.com/docs/supported-currencies">link</a> to a wonderful page that has a list of countries and currencies and their corresponding codes. Yay!</p>
+    
+    <form>
+        <input id="start" type="text" value="" />
+        <input id="start-amount" type="text" value="" />
+        <input id="end" type="text" value="" />
+        <input id="submit-button" type="submit" value="Submit" />
+    </form>
+    
+    <h1 id="result"></h1>
+    <script src="exchange-script.js"></script>
+</body>
+</html>

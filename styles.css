@@ -2,8 +2,33 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-align: center;
 }
 
-h1 {
-    color: red;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(yellowstone.jpg);
+}
+
+.body-item {
+    margin: 50px;
+}
+
+p, label, h1{
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 200px;
 }

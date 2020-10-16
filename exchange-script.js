@@ -1,13 +1,6 @@
 fetch("https://open.exchangerate-api.com/v6/latest").then(function (response) {
     return response.json();
 }).then(function (data) {
-    document.getElementById("header").innerHTML = data.rates.USD;
-    var countries = [];
-    for (let element in data.rates) {
-        countries.push(element);
-    }
-    console.log(data.rates);
-
     document.getElementById("submit-button").addEventListener("click", function (event) {
         event.preventDefault();
         let start = document.getElementById("start").value;

@@ -6,6 +6,8 @@ fetch("https://open.exchangerate-api.com/v6/latest").then(function (response) {
         let start = document.getElementById("start").value;
         let end = document.getElementById("end").value;
         let startAmount = document.getElementById("start-amount").value;
+        document.getElementById("result").style.backgroundColor = "lightgray";
+        document.getElementById("result").style.borderRadius = "7px";
         if (start === "USD") {
             let test = data.rates[end];
             document.getElementById("result").innerHTML = startAmount * data.rates[end];
@@ -19,3 +21,7 @@ fetch("https://open.exchangerate-api.com/v6/latest").then(function (response) {
     });
 
 });
+
+var pictures = ["landscape.jpg", "mountain.jpg", "mtns.jpg", "road.jpg", "skyline.jpg", "yellowstone.jpg"];
+
+document.getElementById("converter").style.backgroundImage = `url(${pictures[Math.round(Math.random() * 5)]})`;

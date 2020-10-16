@@ -3,32 +3,147 @@
     margin: 0px;
     box-sizing: border-box;
     text-align: center;
+    font-family: "Candara";
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(yellowstone.jpg);
+input, #result {
+    font-family: "Arial";
 }
 
-.body-item {
-    margin: 50px;
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p, label, h1{
-    width: 40%;
-    padding: 10px;
-    background-color: white;
-    border-radius: 7px;
+@media only screen and (max-width: 600px) {
+    #converter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-size: cover;
+        padding-bottom: 100px;
+    }
+
+    .body-item {
+        margin-bottom: 50px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #header {
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    h2 {
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .currencies {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    p, label, h1 {
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 7px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1, p {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@media only screen and (min-width: 601px) {
+    #converter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-size: cover;
+        padding-bottom: 100px;
+    }
 
-label {
-    width: 200px;
+    .body-item {
+        margin-bottom: 50px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit-button {
+        width: 30%;
+        padding: 10px;
+    }
+
+    #header {
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    h2 {
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .currencies {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    p, label, h1 {
+        width: 40%;
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 7px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    label {
+        margin-right: 10px;
+    }
 }
